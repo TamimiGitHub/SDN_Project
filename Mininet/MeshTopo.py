@@ -56,7 +56,7 @@ class MeshTopo(Topo):
    
 
 def run():
-    c = RemoteController('c', '134.117.57.114')
+    c = RemoteController('c', '134.117.57.113')
     #switch = partial( OVSSwitch, protocols='OpenFlow13' )
     #c = RemoteController('c', '127.0.0.1')
     net = Mininet(topo=MeshTopo(), host=CPULimitedHost, controller=None, autoSetMacs=True)
