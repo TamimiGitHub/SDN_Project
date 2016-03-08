@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This flow drops all the http (TCP port 80) traffic going/leaving S2 network -->
+
+    <flow xmlns="urn:opendaylight:flow:inventory">
+        <id>10</id>
+        <match>
+            <ethernet-match>
+                <ethernet-type>
+                    <type>0x0800</type>
+                </ethernet-type>
+            </ethernet-match>
+            <ip-match>
+                <ip-protocol>6</ip-protocol>
+            </ip-match>
+            <tcp-destination-port>80</tcp-destination-port>
+        </match>
+        <instructions>
+            <instruction>
+                <order>1</order>
+                <apply-actions>
+                    <action>
+                        <order>1</order>
+                        <drop-action />
+                    </action>
+                </apply-actions>
+            </instruction>
+        </instructions>
+        <cookie>0x12345678</cookie>
+        <table_id>0</table_id>
+    </flow>

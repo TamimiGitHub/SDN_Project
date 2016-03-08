@@ -1,3 +1,6 @@
-# SDN_mininet
+ SDN project - Carleton Univeirstiy 
+================
 
-Contains python scripts for mininet topologies
+* GUI
+* Flows creating
+* Contains python scripts for mininet topologies
