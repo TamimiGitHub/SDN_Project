@@ -1,4 +1,4 @@
-__author__ = 'Larona'
+__author__ = 'Carleotn SDN project'
 from mininet.node import CPULimitedHost
 from mininet.node import OVSKernelSwitch
 from mininet.topo import Topo
@@ -26,7 +26,7 @@ class MeshTopo(Topo):
 
         # Init values
         switches = 5   # total switchs
-        cons = 5        # connections with next switch
+        cons = 4        # connections with next switch
         if cons >= switches:
                 cons = switches - 1
         hosts = 5      # nodes per switch
