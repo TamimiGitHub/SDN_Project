@@ -1,13 +1,12 @@
- SDN project - Carleton Univeirstiy 
+ Front End Solution
 ================
 
-* GUI
-* Flows creating
-* Contains python scripts for mininet topologies
+* Front end IRIS
 
 Prerequisits 
 ===============
 
-* Ubuntu environment
-* Opendaylight Lithum
-* Hyperglance 4.0
+* Apache Server
+* PHP
+* CSS
+
