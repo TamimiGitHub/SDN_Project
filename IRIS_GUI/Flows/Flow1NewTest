@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This flow drops all the traffic coming from h5 to switch 5 -->
+<flow>xmlns=urn:opendaylight:flow:inventory</flow>
